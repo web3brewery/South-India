@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400&family=Ubuntu+Mono:ital,wght@0,700;1,400&family=Ubuntu:wght@500&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*navbar section */
+
+#navbar {
+    display: flex;
+    
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    font-size: 30px;
+    list-style: none;
+}
+
+#navbar ul li a {
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+#navbar ul li a:hover {
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: gray;
+    background-color: #f2f2f2
+}
+
+
+.logo {
+    padding: 5px 10px;
+}
+
+.logo img {
+    height: 38px;
+    border-radius: 58px;
+    border: 2px solid black;
+
+}
+
+/* 2nd section */
+
+
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    content: close-quote;
+    color: black;
+    font-size: 23px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    position: relative;
+
+}
+
+#home:hover{
+    text-decoration: none;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(back2.jpg) no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 158%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+
+.h-primary {
+   
+    text-decoration: none;
+    font-size: 25px;
+    padding-top: 205px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.secondary p{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.dark {
+    font-family: 'Bricolage Grotesque';
+    padding: 10px 8px;
+    color: white;
+    background-color: brown;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/*  3rd section */
+
+#services-container{
+    top: 0;
+    left: 0;
+}
+
+#services{
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+#services .box{
+    border: 2px solid black;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: black;
+
+}
+
+#services .box img{
+    height: 212px;
+    display: block;
+    margin: auto;
+
+}
+
+.h-secondary{
+    text-align: center;
+    color: black;
+}
+
+.contact{
+    height: 550px;
+    background: #f2f2f2;
+}
+
+.contact h1{
+    color: black;
+}
+
+.item{
+    display: block;
+    margin: auto;
+    width: 50%;
+    font-family: 'Bricolage Grotesque';
+    padding: 6px 6px;
+    border-radius: 8px;
+    margin-top: 35px;
+}
+
+.big{
+    text-decoration: none;
+    padding-top: 40px;
+    font-size: 25px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    text-align: center;
+    color: black;
+
+}
+
+.biger{
+    text-decoration: none;
+    padding-top: 55px;
+    font-size: 25px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    text-align: center;
+    color: black;
+
+}
+
+@media only screen and (max-width:1170px) {
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #services{
+        flex-direction: column;
+    }
+    
+    #navbar ul li {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    
+    #navbar ul li a{
+        padding: 5px 0px;
+    }
+    
+    
+    #home::before{
+        height:142%;
+    }
+    
+    #services .box img{
+        height: 153px;
+    }
+
+}
+
